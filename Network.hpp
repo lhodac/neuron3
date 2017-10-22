@@ -16,9 +16,10 @@ private:
 
 public:
 	Neuron getNeuron(int n);
+	void addNeuron(Neuron neuron);
 	void reset();
-	void update(double simtime, double I_ext);
-	Network(std::vector<Neuron*> neurons);
+	void update(int currentStep, int nbSteps, double I_ext);
+	Network();
 	~Network();
 	
 	
